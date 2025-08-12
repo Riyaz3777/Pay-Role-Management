@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background: linear-gradient(135deg, #e0e7ff, #c7d2fe);
+  border-radius: 24px;
+  padding: 40px 35px;
+  box-shadow: 0 20px 40px rgba(37, 117, 252, 0.25);
+  color: #1e293b;
+  max-width: 500px;
+  width: 100%;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.container:hover {
+  box-shadow: 0 30px 70px rgba(37, 117, 252, 0.45);
+  transform: translateY(-5px);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 28px;
+  color: #1e293b;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  color: #334155;
+}
+
+input[type=number] {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+  font-size: 16px;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+input[type=number]:focus {
+  border: 1px solid #2575fc;
+  outline: none;
+  box-shadow: 0 0 8px rgba(37, 117, 252, 0.3);
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  background: linear-gradient(to right, #2575fc, #6a11cb);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(37, 117, 252, 0.3);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.error {
+  display: none;
+  margin-top: 15px;
+  color: #b91c1c;
+  background-color: #fecaca;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: 500;
+  text-align: center;
+}
+
+#result-table {
+  margin-top: 30px;
+}
+
+#result-table h2 {
+  color: #1e293b;
+  font-weight: 600;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+thead {
+  background-color: #2575fc;
+  color: white;
+}
+
+th,
+td {
+  padding: 14px 12px;
+  text-align: center;
+  font-weight: 500;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f1f4f9;
+}
+
+.hidden {
+  display: none;
+}
